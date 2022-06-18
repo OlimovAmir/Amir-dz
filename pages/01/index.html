@@ -10,21 +10,72 @@
   <link rel="stylesheet" href="styles.scss">
 </head>
 <body>
-<div class="px-24 py-9 mx-auto bg-amber-600" >
+<div class="px-24 py-9 mx-auto bg-amber-600">
   <a class="text-amber-900 underline" href="../..">🠔 Назад к списку заданий</a>
   <br><br>
-<!--  <h1 class="text-xl text-yellow-100"></h1>-->
-  <ul class="list-decimal px-10 text-xl text-yellow-100 space-y-3">
-    <li></li>
-    <li></li>
+  <ul class="list-decimal px-10 text-lg text-yellow-100 space-y-3">
+    <li>
+      у всех элементов внутри тэга <code>main</code> необходимо сделать отступ от левого края равным 50px
+      стили написать в <code>styles.scss</code>, добавить для этого нужные классы в вёрстку
+    </li>
+    <li>
+      у элементов i, li и span с помощью добавления нужного класса или классов
+      и стилей в том же файле необходимо изменить цвет текста и добавить подчёркивание
+    </li>
+    <li>
+      у элементов i, li и span с помощью JS (в файле ./index.js) добавить класс вида .tag-НАЗВАНИЕ_ТЭГА, т.е.
+      .tag-i, .tag-li и .tag-span соответственно
+    </li>
+    <li>
+      добавить слушателя к элементу <code>span</code> на событие клика.
+      по клику в консоль должно выводить содержимое этого тега <code>span</code>
+    </li>
+    <li>
+      добавить обработчик события <code>hover</code> к тегу <code>i</code>.
+      когда событие произошло, нужно заменять в элементе <code>li</code> текст на "курсор над i".
+      если увести мышь с элемента <code>i</code>, текст в <code>li</code> должен возвращаться
+      в изначальное состояние
+    </li>
   </ul>
+
+  <div class="text-amber-300 mt-10 italic">
+    <h3 class="text-lg">может пригодиться:</h3>
+    <ul class="list-disc px-5 underline">
+      <li><a class="hover:text-teal-700" href="https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener">
+        EventTarget/addEventListener
+      </a></li>
+      <li><a class="hover:text-teal-700" href="https://developer.mozilla.org/ru/docs/Web/API/Element/mouseenter_event">
+        Element/mouseenter_event
+      </a></li>
+      <li><a class="hover:text-teal-700" href="https://developer.mozilla.org/ru/docs/Web/API/Element/classList">
+        Element/classList
+      </a></li>
+    </ul>
+  </div>
+
 </div>
 
-
-
-<main class="container px-4 py-9 mx-auto mt-20">
-
+<!-- -->
+<!-- -->
+<!-- -->
+<main id="main" class="container px-4 py-9 mx-auto mt-20 text-gray-600">
+  <div>
+    <aside>
+      <ul>
+        <li>элемент списка</li>
+      </ul>
+      <p>
+        текст в абзаце
+        <i>курсивный текст в абзаце</i>
+      </p>
+      <span>текст в спане</span>
+    </aside>
+  </div>
 </main>
+<!-- -->
+<!-- -->
+<!-- -->
+
 <script src="./index.js"></script>
 </body>
 </html>
